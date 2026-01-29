@@ -1,0 +1,15 @@
+{
+	"Name": "",
+	"Description": "",
+	"Intrinsic": 0,
+	"Economic": 0,
+	"Slot": "",
+	"Covers": [],
+	"Type": "",
+	"Armour": 0,
+	"Penalty": [],
+	"Rarity": "",
+	"Quality": "",
+	"Requires": "",
+	"Enchants": []
+}

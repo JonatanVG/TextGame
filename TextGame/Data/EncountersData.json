@@ -1,0 +1,97 @@
+{
+    "Exploration": [
+        {
+        "Name": "Mysterious Cave",
+        "Type": "Exploration",
+        "Parent": "Game Menu",
+        "Description": "You stumble upon a dark and mysterious cave. It looks like it hasn't been explored in ages.",
+        "Options": [
+            {
+                "Choice": "Enter the cave",
+                "Outcome": "You venture into the darkness, your eyes slowly adjusting to the dim light.",
+                "Action": "takedamage10"
+            },
+            {
+                "Choice": "Walk past the cave",
+                "Outcome": "You decide it's best to avoid potential danger and continue on your path.",
+                "Action": ""
+            }
+        ]
+        },
+        {
+        "Name": "Overturned Cart",
+        "Type": "Exploration",
+        "Parent": "Game Menu",
+        "Description": "You find an overturned cart blocking your path. It looks like it was abandoned in a hurry.",
+        "Options": [
+            {
+                "Choice": "Inspect the cart",
+                "Outcome": "You find some useful supplies scattered around, including a health potion.",
+                "Action": "additemHealthPotion"
+            },
+            {
+                "Choice": "Clear the path",
+                "Outcome": "You manage to right the cart and clear the path, but it takes some effort.",
+                "Action": "takedamage5"
+            }
+        ]
+        }
+    ],
+    "Combat": [
+        {
+        "Name": "Goblin Ambush",
+        "Type": "Combat",
+        "Parent": "Game Menu",
+        "Description": "A group of goblins ambushes you from the shadows.",
+        "Options": [
+            {
+            "Choice": "Fight!",
+            "Outcome": "Battle start!",
+            "Action": "battlestart"
+            }
+        ],
+        "Enemies": [ "Goblin", "Goblin" ],
+        "Rewards": {
+            "Experience": 50,
+            "Loot": [
+                {
+                "Item": "Gold Coin",
+                "Quantity": 10
+                },
+                {
+                "Item": "Goblin Ear",
+                "Quantity": 1
+                }
+            ]
+        }
+        },
+        {
+        "Name": "Lone Goblin",
+        "Type": "Combat",
+        "Parent": "Game Menu",
+        "Description": "A lone goblin stands in your path, looking for trouble.",
+        "Options": [
+            {
+            "Choice": "Ambush",
+            "Outcome": "You sneak up on the goblin and strike it...",
+            "Action": "battlestartambush"
+            },
+            {
+            "Choice": "Leave",
+            "Outcome": "Rather not fight right now. Best I just leave...",
+            "Action": ""
+            }
+        ],
+        "Enemies": [ "Goblin", "Goblin", "Goblin Archer", "Dragon" ],
+        "Rewards": {
+            "Experience": 20,
+            "Loot": [
+                {
+                "Item": "Gold Coin",
+                "Quantity": 5
+                }
+            ]
+        }
+        }
+    ]
+}

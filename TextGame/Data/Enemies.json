@@ -1,0 +1,83 @@
+{
+    "General": [
+        {
+            "Type": "Basic",
+            "Name": "Goblin",
+            "Health": 30,
+            "Attack": 5,
+            "Defense": 2,
+            "Attacks": [
+                "Slash",
+                "Stab"
+            ],
+            "Drops": [
+                {
+                "Item": "Gold Coin",
+                "Quantity": 5
+                },
+                {
+                "Item": "Goblin Ear",
+                "Quantity": 1
+                }
+            ]
+        },
+        {
+            "Type": "Basic",
+            "Name": "Goblin Archer",
+            "Health": 20,
+            "Attack": 7,
+            "Defense": 1,
+            "Attacks": [
+                "Slash",
+                "Stab"
+            ],
+            "Drops": [
+                {
+                "Item": "Gold Coin",
+                "Quantity": 3
+                },
+                {
+                "Item": "Arrow",
+                "Quantity": 10
+                }
+            ]
+        }
+    ],
+    "Special": [
+    ],
+    "Bosses": [
+        {
+            "Type": "Boss",
+            "Name": "Dragon",
+            "Health": 300,
+            "Attack": 50,
+            "Defense": 30,
+            "Attacks": [
+                "Slash",
+                "Stab"
+            ]
+        },
+        {
+            "Type": "Boss",
+            "Name": "Goblin King",
+            "Health": 200,
+            "Attack": 40,
+            "Defense": 20,
+            "Attacks": [
+                "Slash",
+                "Stab"
+            ]
+        },
+        {
+            "Type": "Boss",
+            "Name": "Undead Lich",
+            "Health": 250,
+            "Attack": 45,
+            "Defense": 25,
+            "Attacks": [
+                "Slash",
+                "Stab"
+            ]
+        }
+    ]
+}

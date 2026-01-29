@@ -1,0 +1,113 @@
+{
+		"Defensive": [
+				{
+						"Name": "Shielding",
+						"Description": "Increases your defense by 10%.",
+						"Type": "Defensive",
+						"Effect": {
+								"Type": "DefenseBoost",
+								"Value": 0.10
+						}
+				},
+				{
+						"Name": "Fortitude",
+						"Description": "Reduces incoming damage by 5%.",
+						"Type": "Defensive",
+						"Effect": {
+								"Type": "DamageReduction",
+								"Value": 0.05
+						}
+				},
+				{
+						"Name": "Regeneration",
+						"Description": "Restores 2% of your maximum health at the end of your turn.",
+						"Type": "Defensive",
+						"Effect": {
+								"Type": "HealthRegen",
+								"Value": 0.02,
+								"Interval": 1
+						}
+				},
+				{
+						"Name": "Barrier",
+						"Description": "Grants a shield that absorbs 15% of your maximum health for 3 turns.",
+						"Type": "Defensive",
+						"Effect": {
+						"Type": "Shield",
+								"Value": 0.15,
+								"Duration": 3
+						}
+				}
+		],
+		"Offensive": [
+				{
+						"Name": "Flaming",
+						"Description": "Adds fire damage equal to 10% of your attack power.",
+						"Type": "Offensive",
+						"Effect": {
+						"Type": "ExtraDamage",
+								"Element": "Fire",
+								"Value": 0.10
+						}
+				},
+				{
+						"Name": "Freezing",
+						"Description": "Adds ice damage equal to 10% of your attack power.",
+						"Type": "Offensive",
+						"Effect": {
+						"Type": "ExtraDamage",
+								"Element": "Ice",
+								"Value": 0.10
+						}
+				},
+				{
+						"Name": "Poisonous",
+						"Description": "Adds poison damage equal to 5% of your attack power over 3 turns.",
+						"Type": "Offensive",
+						"Effect": {
+								"Type": "DamageOverTime",
+								"Element": "Poison",
+								"Value": 0.05,
+								"Duration": 3
+						}
+				}
+		],
+		"Utility": [
+				{
+						"Name": "Swift",
+						"Description": "Increases your speed by 15% making your next turn arrive faster.",
+						"Type": "Utility",
+						"Effect": {
+								"Type": "SpeedBoost",
+								"Value": 0.15
+						}
+				},
+				{
+						"Name": "Precise",
+						"Description": "Increases your critical hit chance by 5%.",
+						"Type": "Utility",
+						"Effect": {
+								"Type": "CritChanceBoost",
+								"Value": 0.05
+						}
+				},
+				{
+						"Name": "Vampiric",
+						"Description": "Heals you for 5% of the damage you deal.",
+						"Type": "Utility",
+						"Effect": {
+								"Type": "LifeSteal",
+								"Value": 0.05
+						}
+				},
+				{
+						"Name": "Lucky",
+						"Description": "Increases your loot drop rate by 10%.",
+						"Type": "Utility",
+						"Effect": {
+								"Type": "LootBoost",
+								"Value": 0.10
+						}
+				}
+		]
+}

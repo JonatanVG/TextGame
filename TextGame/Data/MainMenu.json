@@ -1,0 +1,235 @@
+{
+		"MainMenus": [
+				{
+						"Name": "Main Menu",
+						"Parent": "",
+						"Description": "Welcome to the Text Adventure Game!",
+						"Options": [
+								{
+										"Choice": "Start New Game",
+										"Outcome": "Starting a new game. Choose savefile...",
+										"Action": "GoTo:Game-Menu"
+								},
+								{
+										"Choice": "Load Game",
+										"Outcome": "Choose savefile to load",
+										"Action": "Harm:5"
+								},
+								{
+										"Choice": "Settings",
+										"Outcome": "Modify game settings",
+										"Action": "From:Main-Menu:Settings-Menu"
+								},
+								{
+										"Choice": "Gold",
+										"Outcome": "",
+										"Action": "Item:Potion-of-Healing:Add:30"
+								},
+								{
+										"Choice": "Inventory",
+										"Outcome": "",
+										"Action": "Inventory"
+								},
+								{
+										"Choice": "Remove",
+										"Outcome": "",
+										"Action": "Item:Coin:Remove:20"
+								}
+						]
+				},
+				{
+						"Name": "Pause Menu",
+						"Parent": "Main Menu",
+						"Description": "Game Paused",
+						"Options": [
+								{
+										"Choice": "Resume",
+										"Outcome": "Resumed game",
+										"Action": "GoTo:Game-Menu"
+								},
+								{
+										"Choice": "Save",
+										"Outcome": "Choose savefile...",
+										"Action": "save"
+								},
+								{
+										"Choice": "Load",
+										"Outcome": "Choose savefile...",
+										"Action": "load"
+								},
+								{
+										"Choice": "Settings",
+										"Outcome": "Modify game settings",
+										"Action": "From:Pause-Menu:Settings-Menu"
+								}
+						]
+				}
+		],
+		"GameMenus": [
+				{
+						"Name": "Game Menu",
+						"Parent": "Pause Menu",
+						"Description": "Game",
+						"Options": [
+								{
+										"Choice": "Explore",
+										"Outcome": "Explore the wilderness",
+										"Action": "Explore"
+								},
+								{
+										"Choice": "Town",
+										"Outcome": "Go to the town",
+										"Action": "From:Game-Menu:Town-Menu"
+								}
+						]
+				},
+				{
+						"Name": "Town Menu",
+						"Parent": "",
+						"Description": "A tiny town on a tiny mountain.",
+						"Options": [
+								{
+										"Choice": "Armoury",
+										"Outcome": "",
+										"Action": "Store:Armoury"
+								},
+								{
+										"Choice": "Smithy",
+										"Outcome": "",
+										"Action": "Store:Smithy"
+								},
+								{
+										"Choice": "",
+										"Outcome": "",
+										"Action": "Town:Industry"
+								}
+						]
+				},
+				{
+						"Name": "Settings Menu",
+						"Parent": "",
+						"Description": "Settings menu this is.",
+						"Options": []
+				},
+				{
+						"Name": "Inventory",
+						"Parent": "",
+						"Description": "All the items you have crammed into your pockets...",
+						"Options": []
+				}
+		],
+		"CombatMenus": [
+				{
+						"Name": "Main",
+						"Parent": "",
+						"Description": "Time is ticking, your enemies are yet alive.",
+						"Options": [
+								{
+										"Choice": "Move",
+										"Outcome": "",
+										"Action": "GoTo:Movement"
+								},
+								{
+										"Choice": "Attack",
+										"Outcome": "",
+										"Action": "GoTo:Attack-Categories"
+								},
+								{
+										"Choice": "Item",
+										"Outcome": "You rumage through your backpack and pockets for anything you can use...",
+										"Action": "GoTo:Battle-Inventory"
+								},
+								{
+										"Choice": "Act",
+										"Outcome": "Pick a skill to use...",
+										"Action": "GoTo:Combat-Skills"
+								}
+						]
+				},
+				{
+						"Name": "Attack Categories",
+						"Parent": "Main",
+						"Description": "What kind of attack will you make?",
+						"Options": [
+								{
+										"Choice": "Melee",
+										"Outcome": "You ready your strike...",
+										"Action": "GoTo:Melee"
+								},
+								{
+										"Choice": "Ranged",
+										"Outcome": "You ready your strike...",
+										"Action": "GoTo:Ranged"
+								},
+								{
+										"Choice": "Arcana",
+										"Outcome": "You channel your energy...",
+										"Action": "GoTo:Arcana"
+								}
+						]
+				},
+				{
+						"Name": "Battle Inventory",
+						"Parent": "Main",
+						"Description": "You find multiple items in your inventory. Which will you use?",
+						"Options": []
+				},
+				{
+						"Name": "Combat Skills",
+						"Parent": "Main",
+						"Description": "You remember back to your training and ready a technique...",
+						"Options": []
+				},
+				{
+						"Name": "Movement",
+						"Parent": "Main",
+						"Description": "Move around",
+						"Options": [
+								{
+										"Choice": "Up",
+										"Outcome": "You move up.",
+										"Action": "grid_Up"
+								},
+								{
+										"Choice": "Down",
+										"Outcome": "You move down.",
+										"Action": "grid_Down"
+								},
+								{
+										"Choice": "Left",
+										"Outcome": "You move left.",
+										"Action": "grid_Left"
+								},
+								{
+										"Choice": "Right",
+										"Outcome": "You move right.",
+										"Action": "grid_Right"
+								}
+						]
+				},
+				{
+						"Name": "Melee",
+						"Parent": "Attack Categories",
+						"Description": "You ready your weapon, ready to strike...",
+						"Options": []
+				},
+				{
+						"Name": "Ranged",
+						"Parent": "Attack Categories",
+						"Description": "You draw the bowstring back beyond your shoulder. Your muscles tense in unison with the string...",
+						"Options": []
+				},
+				{
+						"Name": "Arcana",
+						"Parent": "Attack Categories",
+						"Description": "You feel power flood to your fingertips...",
+						"Options": []
+				},
+				{
+						"Name": "Attack Menu",
+						"Parent": "Attack Categories",
+						"Description": "Nothing I can think of to put here...",
+						"Options": []
+				}
+		]
+}

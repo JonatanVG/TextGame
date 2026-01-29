@@ -1,0 +1,56 @@
+[
+		{
+				"Name": "Slashing",
+				"Description": "",
+				"Effective": ["UnArmoured"],
+				"Ineffective": ["Armoured"]
+		},
+		{
+				"Name": "Bludgeoning",
+				"Description": "",
+				"Effective": ["Armoured"],
+				"Ineffective": []
+		},
+		{
+				"Name": "Piercing",
+				"Description": "",
+				"Effective": ["Armoured", "UnArmoured"],
+				"Ineffective": ["Armoured", "UnArmoured"]
+		},
+		{
+				"Name": "Heat",
+				"Description": "",
+				"Effective": ["Armoured", "UnArmoured"],
+				"Ineffective": ["Armoured"]
+		},
+		{
+				"Name": "Cold",
+				"Description": "",
+				"Effective": ["Wet"],
+				"Ineffective": ["Warm"]
+		},
+		{
+				"Name": "Mass",
+				"Description": "",
+				"Effective": ["UnArmoured", "Energy"],
+				"Ineffective": []
+		},
+		{
+				"Name": "Energy",
+				"Description": "",
+				"Effective": ["Armoured"],
+				"Ineffective": []
+		},
+		{
+				"Name": "Necrotic",
+				"Description": "",
+				"Effective": ["Holy"],
+				"Ineffective": []
+		},
+		{
+				"Name": "Holy",
+				"Description": "",
+				"Effective": ["Necrotic"],
+				"Ineffective": []
+		}
+]

@@ -1,0 +1,615 @@
+{
+	"Head Zone": {
+		"Rigid": [
+			{
+				"Name": "Sallet Helmet",
+				"Description": "A sleek, glancing helmet favored by foot soldiers. Its distinctive tail protects the neck.",
+				"Intrinsic": 10,
+				"Economic": 0,
+				"Slot": "Head",
+				"Covers": ["Fine:Neck"],
+				"Type": "Rigid",
+				"Armour": 5,
+				"Penalty": ["Perception-1"],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			},
+			{
+				"Name": "Great Helm",
+				"Description": "A massive, flat-topped cylinder of steel. Imposing and stifling.",
+				"Intrinsic": 16,
+				"Economic": 0,
+				"Slot": "Head",
+				"Covers": ["Fine:Neck", "Superior:Face"],
+				"Type": "Rigid",
+				"Armour": 8,
+				"Penalty": ["Perception-3", "Vulnerable:Bludgeoning"],
+				"Rarity": "Rare",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Mail Coif",
+				"Description": "A hood of interlocking steel rings. Often worn under a helmet.",
+				"Intrinsic": 6,
+				"Economic": 0,
+				"Slot": "Head",
+				"Covers": ["Fine:Neck"],
+				"Type": "Mail",
+				"Armour": 3,
+				"Penalty": ["Perception-1"],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Arming Cap",
+				"Description": "A quilted linen cap, essential for cushioning blows and preventing helmet chafe.",
+				"Intrinsic": 2,
+				"Economic": 0,
+				"Slot": "Head",
+				"Covers": [],
+				"Type": "Padded",
+				"Armour": 1,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": ["Armed"]
+			}
+		]
+	},
+	"Neck Zone": {
+		"Rigid": [
+			{
+				"Name": "Steel Gorget",
+				"Description": "A rigid steel collar protecting the throat and collarbones. The mark of a professional.",
+				"Intrinsic": 8,
+				"Economic": 0,
+				"Slot": "Neck",
+				"Covers": ["Fine:Upper Chest"],
+				"Type": "Rigid",
+				"Armour": 4,
+				"Penalty": [],
+				"Rarity": "Rare",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Mail Standard",
+				"Description": "A thick collar of mail, hanging from the neck to protect the throat and upper shoulders.",
+				"Intrinsic": 10,
+				"Economic": 0,
+				"Slot": "Neck",
+				"Covers": ["Fine:Shoulder"],
+				"Type": "Mail",
+				"Armour": 5,
+				"Penalty": [],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Woolen Scarf",
+				"Description": "A simple scarf. Provides warmth and minor padding against chafing armor.",
+				"Intrinsic": 0,
+				"Economic": 0,
+				"Slot": "Neck",
+				"Covers": [],
+				"Type": "Padded",
+				"Armour": 0,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": ["Warm1"]
+			}
+		]
+	},
+	"Torso Zone": {
+		"Rigid": [
+			{
+				"Name": "Cuirass",
+				"Description": "The combined breastplate and backplate, forming the core of a plate harness.",
+				"Intrinsic": 20,
+				"Economic": 0,
+				"Slot": "Torso",
+				"Covers": ["Fine:Waist", "Superior:Leg Upper", "Masterwork:Neck"],
+				"Type": "Rigid",
+				"Armour": 10,
+				"Penalty": ["Dexterity-1"],
+				"Rarity": "Rare",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			},
+			{
+				"Name": "Brigandine Jacket",
+				"Description": "A sturdy leather jacket with small steel plates riveted inside. A versatile mid-tier defense.",
+				"Intrinsic": 12,
+				"Economic": 0,
+				"Slot": "Torso",
+				"Covers": ["Fine:Waist"],
+				"Type": "Rigid",
+				"Armour": 6,
+				"Penalty": [],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Hauberk",
+				"Description": "A long shirt of riveted mail, the signature armor of knights and men-at-arms for centuries.",
+				"Intrinsic": 24,
+				"Economic": 0,
+				"Slot": "Torso",
+				"Covers": ["Arms Upper", "Arms Lower", "Shoulder", "Waist"],
+				"Type": "Mail",
+				"Armour": 6,
+				"Penalty": ["Dexterity-2", "Stealth-Disadvantage"],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Gambeson",
+				"Description": "A thick, quilted jacket worn as standalone armor or beneath mail and plate. The warrior's foundation.",
+				"Intrinsic": 10,
+				"Economic": 0,
+				"Slot": "Torso",
+				"Covers": ["Arms Upper", "Arms Lower", "Waist"],
+				"Type": "Padded",
+				"Armour": 5,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": ["Armed"]
+			}
+		]
+	},
+	"Shoulder Zone": {
+		"Rigid": [
+			{
+				"Name": "Steel Pauldrons",
+				"Description": "Large, curved plates protecting the shoulder joint and upper arm.",
+				"Intrinsic": 8,
+				"Economic": 0,
+				"Slot": "Shoulder",
+				"Covers": ["Fine:Arm Upper", "Superior:Armpits"],
+				"Type": "Rigid",
+				"Armour": 4,
+				"Penalty": [],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Mail Gussets",
+				"Description": "Patches of mail sewn into the armpits of a gambeson to protect this vulnerable gap.",
+				"Intrinsic": 4,
+				"Economic": 0,
+				"Slot": "Shoulder",
+				"Covers": ["Fine:Armpits"],
+				"Type": "Mail",
+				"Armour": 2,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Leather Spaulders",
+				"Description": "Simple hardened leather shoulder guards, offering basic protection.",
+				"Intrinsic": 6,
+				"Economic": 0,
+				"Slot": "Shoulder",
+				"Covers": [],
+				"Type": "Padded",
+				"Armour": 3,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		]
+	},
+	"Arm Upper": {
+		"Rigid": [
+			{
+				"Name": "Rerebrace",
+				"Description": "The plate armor for the upper arm, from shoulder to elbow.",
+				"Intrinsic": 6,
+				"Economic": 0,
+				"Slot": "Arms Upper",
+				"Covers": ["Fine:Shoulder"],
+				"Type": "Rigid",
+				"Armour": 3,
+				"Penalty": [],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Mail Sleeves",
+				"Description": "Detachable sleeves of mail, often worn with a hauberk for extended coverage.",
+				"Intrinsic": 8,
+				"Economic": 0,
+				"Slot": "Arms Upper",
+				"Covers": ["Arms Lower"],
+				"Type": "Mail",
+				"Armour": 4,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Arming Sleeves",
+				"Description": "Padded sleeves of a gambeson, worn to cushion the arms.",
+				"Intrinsic": 4,
+				"Economic": 0,
+				"Slot": "Arms Upper",
+				"Covers": ["Arms Lower"],
+				"Type": "Padded",
+				"Armour": 2,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		]
+	},
+	"Arm Lower": {
+		"Rigid": [
+			{
+				"Name": "Vambrace",
+				"Description": "Plate armor for the forearm, essential for deflecting blows to the arms.",
+				"Intrinsic": 8,
+				"Economic": 0,
+				"Slot": "Arms Lower",
+				"Covers": [],
+				"Type": "Rigid",
+				"Armour": 4,
+				"Penalty": [],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Mail Bracers",
+				"Description": "Forearm guards of chainmail, lighter than plate but less protective.",
+				"Intrinsic": 6,
+				"Economic": 0,
+				"Slot": "Arms Lower",
+				"Covers": [],
+				"Type": "Mail",
+				"Armour": 3,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Forearm Wraps",
+				"Description": "Thick linen wraps for the forearms, providing minimal padding.",
+				"Intrinsic": 2,
+				"Economic": 0,
+				"Slot": "Arms Lower",
+				"Covers": [],
+				"Type": "Padded",
+				"Armour": 1,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		]
+	},
+	"Hand Zone": {
+		"Rigid": [
+			{
+				"Name": "Gauntlets",
+				"Description": "Articulated metal gloves, protecting the hands and fingers while allowing dexterity.",
+				"Intrinsic": 10,
+				"Economic": 0,
+				"Slot": "Hands",
+				"Covers": ["Fine:Wrist", "Superior:Forearm"],
+				"Type": "Rigid",
+				"Armour": 5,
+				"Penalty": ["Dexterity-1"],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Mail Mittens",
+				"Description": "Mittens of chainmail, often integrated into the sleeves of a hauberk.",
+				"Intrinsic": 6,
+				"Economic": 0,
+				"Slot": "Hands",
+				"Covers": [],
+				"Type": "Mail",
+				"Armour": 3,
+				"Penalty": ["Dexterity-1"],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Arming Gloves",
+				"Description": "Heavily padded leather gloves with laces to secure gauntlets. Essential for plate wearers.",
+				"Intrinsic": 4,
+				"Economic": 0,
+				"Slot": "Hands",
+				"Covers": [],
+				"Type": "Padded",
+				"Armour": 2,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": ["Armed"]
+			}
+		]
+	},
+	"Waist Zone": {
+		"Rigid": [
+			{
+				"Name": "Faulds and Tassets",
+				"Description": "Overlapping horizontal plates hanging from the waist to protect the hips and upper thighs.",
+				"Intrinsic": 8,
+				"Economic": 0,
+				"Slot": "Waist",
+				"Covers": ["Leg Upper"],
+				"Type": "Rigid",
+				"Armour": 4,
+				"Penalty": [],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Mail Skirt",
+				"Description": "A skirt of chainmail extending from the waist, protecting the groin and upper legs.",
+				"Intrinsic": 6,
+				"Economic": 0,
+				"Slot": "Waist",
+				"Covers": ["Leg Upper"],
+				"Type": "Mail",
+				"Armour": 3,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Padded Belt",
+				"Description": "A wide, quilted belt worn to pad the hips and anchor other armor pieces.",
+				"Intrinsic": 2,
+				"Economic": 0,
+				"Slot": "Waist",
+				"Covers": [],
+				"Type": "Padded",
+				"Armour": 1,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		]
+	},
+	"Leg Upper": {
+		"Rigid": [
+			{
+				"Name": "Cuisses",
+				"Description": "Plate armor for the thighs, often attached to poleyns (knee guards).",
+				"Intrinsic": 10,
+				"Economic": 0,
+				"Slot": "Leg Upper",
+				"Covers": ["Superior:Knee"],
+				"Type": "Rigid",
+				"Armour": 5,
+				"Penalty": ["Speed-5%"],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Mail Chausses",
+				"Description": "Leggings of chainmail, extending from waist to ankle.",
+				"Intrinsic": 12,
+				"Economic": 0,
+				"Slot": "Leg Upper",
+				"Covers": ["Leg Lower"],
+				"Type": "Mail",
+				"Armour": 6,
+				"Penalty": ["Speed-10%"],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Padded Chausses",
+				"Description": "Quilted leggings, worn under mail or plate to protect the legs.",
+				"Intrinsic": 6,
+				"Economic": 0,
+				"Slot": "Leg Upper",
+				"Covers": ["Leg Lower"],
+				"Type": "Padded",
+				"Armour": 3,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": ["Armed"]
+			}
+		]
+	},
+	"Leg Lower": {
+		"Rigid": [
+			{
+				"Name": "Greaves",
+				"Description": "Plate armor for the shins, protecting this commonly targeted area.",
+				"Intrinsic": 8,
+				"Economic": 0,
+				"Slot": "Leg Lower",
+				"Covers": [],
+				"Type": "Rigid",
+				"Armour": 4,
+				"Penalty": ["Speed-5%"],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Mail Greaves",
+				"Description": "Shin guards of chainmail, more flexible but less protective than plate.",
+				"Intrinsic": 6,
+				"Economic": 0,
+				"Slot": "Leg Lower",
+				"Covers": [],
+				"Type": "Mail",
+				"Armour": 3,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Shin Wraps",
+				"Description": "Simple padded wraps for the lower legs.",
+				"Intrinsic": 2,
+				"Economic": 0,
+				"Slot": "Leg Lower",
+				"Covers": [],
+				"Type": "Padded",
+				"Armour": 1,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		]
+	},
+	"Foot Zone": {
+		"Rigid": [
+			{
+				"Name": "Sabatons",
+				"Description": "Articulated plate armor for the feet, covering the boot in a flexible steel shell.",
+				"Intrinsic": 8,
+				"Economic": 0,
+				"Slot": "Feet",
+				"Covers": [],
+				"Type": "Rigid",
+				"Armour": 4,
+				"Penalty": ["Stealth-Disadvantage"],
+				"Rarity": "Rare",
+				"Quality": "",
+				"Requires": "Armed",
+				"Enchants": []
+			}
+		],
+		"Mail": [
+			{
+				"Name": "Mail Socks",
+				"Description": "Socks of chainmail, worn over shoes for rare, comprehensive foot protection.",
+				"Intrinsic": 6,
+				"Economic": 0,
+				"Slot": "Feet",
+				"Covers": [],
+				"Type": "Mail",
+				"Armour": 3,
+				"Penalty": ["Speed-5%"],
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": []
+			}
+		],
+		"Padded": [
+			{
+				"Name": "Arming Socks",
+				"Description": "Thick, padded socks worn inside boots to cushion the feet.",
+				"Intrinsic": 2,
+				"Economic": 0,
+				"Slot": "Feet",
+				"Covers": [],
+				"Type": "Padded",
+				"Armour": 1,
+				"Penalty": [],
+				"Rarity": "Common",
+				"Quality": "",
+				"Requires": "",
+				"Enchants": ["Armed"]
+			}
+		]
+	}
+}

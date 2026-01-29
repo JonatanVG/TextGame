@@ -1,0 +1,82 @@
+[
+  {
+    "Name": "Poison",
+    "Damage": 10,
+    "Duration": 2,
+    "Max-Stack": 5,
+    "Stun": false,
+    "StackBreak": "Deadly Poison"
+  },
+  {
+    "Name": "Bleed",
+    "Damage": 4,
+    "Duration": 5,
+    "Max-Stack": 2,
+    "Stun": false,
+    "StackBreak": "Hemmorage"
+  },
+  {
+    "Name": "Zapped",
+    "Damage": 1,
+    "Duration": 1,
+    "Max-Stack": 5,
+    "Stun": true,
+    "StackBreak": "Electrified"
+  },
+  {
+    "Name": "Burn",
+    "Damage": 5,
+    "Duration": 10,
+    "Max-Stack": 5,
+    "Stun": false,
+    "StackBreak": ""
+  },
+  {
+    "Name": "Freeze",
+    "Damage": 5,
+    "Duration": 5,
+    "Max-Stack": 4,
+    "Stun": true,
+    "StackBreak": ""
+  },
+  {
+    "Name": "Deadly Poison",
+    "Damage": 10,
+    "Duration": 99,
+    "Max-Stack": 1,
+    "Stun": true,
+    "StackBreak": ""
+  },
+  {
+    "Name": "Hemmorage",
+    "Damage": 25,
+    "Duration": 1,
+    "Max-Stack": 1,
+    "Stun": true,
+    "StackBreak": ""
+  },
+  {
+    "Name": "Electrified",
+    "Damage": 25,
+    "Duration": 1,
+    "Max-Stack": 1,
+    "Stun": true,
+    "StackBreak": ""
+  },
+  {
+    "Name": "Wet",
+    "Damage": 0,
+    "Duration": 5,
+    "Max-Stack": 1,
+    "Stun": false,
+    "StackBreak": "Wet"
+  },
+  {
+    "Name": "Warm",
+    "Damage": 0,
+    "Duration": 5,
+    "Max-Stack": 5,
+    "Stun": false,
+    "StackBreak": "Burn"
+  }
+]

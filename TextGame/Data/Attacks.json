@@ -1,0 +1,108 @@
+{
+    "Melee": [
+        {
+            "Type": "Melee",
+            "Name": "Punch",
+            "Damage": 1,
+            "Mana_Cost": 0,
+            "Cooldown": 1.0,
+            "Range": 1.0,
+            "Effects": [],
+            "Description": "A quick punch to the opponent."
+        },
+        {
+            "Type": "Melee",
+            "Name": "Kick",
+            "Damage": 2,
+            "Mana_Cost": 0,
+            "Cooldown": 1.5,
+            "Range": 1.0,
+            "Effects": [],
+            "Description": "A strong kick to the opponent."
+        },
+        {
+            "Type": "Melee",
+            "Name": "Earth Shatter",
+            "Damage": 999,
+            "Mana_Cost": 0,
+            "Cooldown": 0.0,
+            "Range": 10.0,
+            "Effects": [],
+            "Description": "A strike so powerful it destroys anything in it's path.'"
+        },
+        {
+            "Type": "Melee",
+            "Name": "Slash",
+            "Damage": 5,
+            "Mana_Cost": 0,
+            "Cooldown": 2.0,
+            "Range": 1.5,
+            "Effects": [],
+            "Description": "A swift slice with a blade."
+        },
+        {
+            "Type": "Melee",
+            "Name": "Stab",
+            "Damage": 8,
+            "Mana_Cost": 0,
+            "Cooldown": 2.5,
+            "Range": 1.5,
+            "Effects": [ "Bleed" ],
+            "Description": "A powerful stab with a blade."
+        }
+    ],
+    "Ranged": [
+        {
+            "Type": "Ranged",
+            "Name": "Arrow Shot",
+            "Damage": 10,
+            "Mana_Cost": 0,
+            "Cooldown": 2.0,
+            "Range": 10.0,
+            "Effects": [],
+            "Description": "Shoot an arrow at the opponent."
+        },
+        {
+            "Type": "Ranged",
+            "Name": "Throw Knife",
+            "Damage": 7,
+            "Mana_Cost": 0,
+            "Cooldown": 1.5,
+            "Range": 8.0,
+            "Effects": [],
+            "Description": "Throw a knife at the opponent."
+        }
+    ],
+    "Arcana": [
+        {
+            "Type": "Arcana",
+            "Name": "Fireball",
+            "Damage": 15,
+            "Mana_Cost": 10,
+            "Cooldown": 3.0,
+            "Range": 12.0,
+            "Effects": [ "Burn" ],
+            "Description": "Cast a fireball that burns the opponent."
+        },
+        {
+            "Type": "Arcana",
+            "Name": "Ice Spike",
+            "Damage": 12,
+            "Mana_Cost": 8,
+            "Cooldown": 2.5,
+            "Range": 10.0,
+            "Effects": [ "Freeze" ],
+            "Description": "Launch an ice spike that can freeze the opponent."
+        },
+        {
+            "Type": "Arcana",
+            "Name": "Heal",
+            "Damage": 10,
+            "Mana_Cost": 25,
+            "Cooldown": 5.0,
+            "Range": 1.0,
+            "Effects": [ "Heal" ],
+            "Description": "A powerful healing spell that restores health."
+        }
+    ]
+}

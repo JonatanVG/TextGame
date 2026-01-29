@@ -1,0 +1,11 @@
+07/11/2025: You have just done a bunch on BattleManager allowing you to fetch indexes of enemies and enemies themself from lists.
+			You found out that enemies fetched from lists dont get extracted from lists so you can change the values of entities
+			in lists without having to worry about putting them back in lists.
+
+
+13/11/2025: Movement of enemy ai on 2d array map in EnemiesManager.cs. CONTINUE WORK ON THIS! IT'S IMPORTANT!
+
+26/11/2025: Figure out how to change window size of terminal in C#. Research needed.
+
+28/11/2025: In Player.cs you are to continue development of afflictions and effects application. Note you have conversation with
+			ChatGPT which explains a few things, chat name "Load JSON Attacks".
