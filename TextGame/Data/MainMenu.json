@@ -23,12 +23,22 @@
 								{
 										"Choice": "Gold",
 										"Outcome": "",
-										"Action": "Item:Potion-of-Healing:Add:30"
+										"Action": "Item:Text-Interface:Add:1"
 								},
 								{
 										"Choice": "Inventory",
 										"Outcome": "",
 										"Action": "Inventory"
+								},
+								{
+									 "Choice": "Stats",
+										"Outcome": "",
+										"Action": "Stats"
+								},
+								{
+										"Choice": "StatUpSpecific",
+										"Outcome": "",
+										"Action": "StatChoice"
 								},
 								{
 										"Choice": "Remove",
@@ -75,6 +85,11 @@
 										"Choice": "Explore",
 										"Outcome": "Explore the wilderness",
 										"Action": "Explore"
+								},
+								{
+									"Choice": "Inventory",
+										"Outcome": "Check your inventory",
+										"Action": "Inventory"
 								},
 								{
 										"Choice": "Town",
@@ -188,22 +203,22 @@
 								{
 										"Choice": "Up",
 										"Outcome": "You move up.",
-										"Action": "grid_Up"
+										"Action": "Grid:Up"
 								},
 								{
 										"Choice": "Down",
 										"Outcome": "You move down.",
-										"Action": "grid_Down"
+										"Action": "Grid:Down"
 								},
 								{
 										"Choice": "Left",
 										"Outcome": "You move left.",
-										"Action": "grid_Left"
+										"Action": "Grid:Left"
 								},
 								{
 										"Choice": "Right",
 										"Outcome": "You move right.",
-										"Action": "grid_Right"
+										"Action": "Grid:Right"
 								}
 						]
 				},

@@ -7,7 +7,6 @@ namespace TextGame.Utilites
   internal class TurnsController()
   {
     private static Player P => Globals.Player;
-    private static BattleManager Battle => Globals.Battle;
     private static List<Enemy> Enemies => Globals.ActiveEnemies;
     private bool PlayerTurn = true;
 

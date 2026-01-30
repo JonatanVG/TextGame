@@ -7,6 +7,7 @@ namespace TextGame.Game
   internal class BattleManager()
   {
     private static Player P => Globals.Player;
+    private static PlayerStats S => Globals.Stats;
     private static TurnsController Turns => Globals.Turns;
     private static List<string> N => Globals.EnemyNames;
     private static string[,] BMap => Globals.BattleMap;

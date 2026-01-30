@@ -9,7 +9,7 @@ namespace TextGame.Utilites.Functions
     private static List<string> N => Globals.EnemyNames;
     public static void HandleExploration()
     {
-      List<string> types = new(["Combat"]);
+      List<string> types = new(["Combat", "Exploration"]);
 
       int randCategoryPos = Random.Next(types.Count);
       string randCategory = types.ElementAt(randCategoryPos);

@@ -8,7 +8,8 @@ namespace TextGame.Utilites
 		internal class RegisterActions
 		{
 				private static Player P => Globals.Player;
-				private static string[,] B => Globals.BattleMap;
+				private static PlayerStats S => Globals.Stats;
+    private static string[,] B => Globals.BattleMap;
 				private static BattleManager Bt => Globals.Battle;
 				private static Attack? currentAttack = P.SelectedAttack;
 				private static List<Enemy> Enms => Globals.CanAttack;
@@ -92,12 +93,36 @@ namespace TextGame.Utilites
         }
       });
 
-						// Inventory
-						ActionResolver.Register(@"^Inventory$", (m) =>
+      /// Inventory
+      // Inventory Menu
+      ActionResolver.Register(@"^Inventory$", (m) =>
 						{
-								P.DisplayInventory();
-								Console.ReadLine();
+								Menu Inventory = Database.GetMenu("Inventory")!;
+								P.GetInventory()
+										.ForEach(i =>
+										{
+												if (i.Type == "Consumeable") Inventory.Options.Add(new MenuOption(i.Name, i.Description, $"Use:{i.Name}"));
+          });
+
+								MenuManager.ShowMenu("Inventory");
 						});
+
+						// Use Item
+						ActionResolver.Register(@"^Use:(.+)$", (m) =>
+						{
+								string itemName = FormatName(m.Groups[1].Value);
+								Item? item = P.GetInventoryItem(itemName).FirstOrDefault()!;
+								item.Effect.ForEach(eff =>
+								{
+										ActionResolver.TryExecute(eff);
+								});
+						});
+
+						// Display stats
+						ActionResolver.Register(@"^Stats$", (m) =>
+						{
+								S.DisplayStats();
+      });
 
       // Unlocks
       ActionResolver.Register(@"^attain(.+)$", (m) =>
@@ -106,6 +131,7 @@ namespace TextGame.Utilites
         P.Attacks.Add(Database.GetAttack(skill)!);
       });
 
+						/// Player actions
       // Healing actions
       ActionResolver.Register(@"^Heal:(\d+)$", (m) =>
 						{
@@ -114,8 +140,32 @@ namespace TextGame.Utilites
 								P.Heal(amount);
 						});
 
-						// Movement actions
-						ActionResolver.Register(@"^Grid:(.+)$", (m) =>
+						// Stat Choice
+						ActionResolver.Register(@"^StatChoice$", (m) =>
+						{
+								Console.WriteLine("Choose a stat to increase:");
+								S.DisplayStats();
+								Console.Write("Enter stat name: ");
+								string? choice = Console.ReadLine();
+								if (!string.IsNullOrEmpty(choice)) 
+								{
+										string stat = $"Stat{choice}";
+										S.IncreaseStat([stat], 1);
+        }
+      });
+
+      // Use item actions
+      ActionResolver.Register(@"^Stat:(.+):(Up|Down):(\d+)$", (m) =>
+						{
+								string stat = FormatName(m.Groups[1].Value);
+								string dir  = m.Groups[2].Value;
+								int amount  = int.Parse(m.Groups[3].Value);
+								List<string> stats = [.. stat.Split(',').Select(s => s.Trim())];
+								S.IncreaseStat(stats, dir == "Up" ? amount : -amount);
+      });
+
+      // Movement actions
+      ActionResolver.Register(@"^Grid:(.+)$", (m) =>
 						{
 								string dir = m.Groups[1].Value;
 								(int x, int y) heroPos = P.Position;
@@ -206,7 +256,7 @@ namespace TextGame.Utilites
 										Console.WriteLine($"Attack action: AttackTypes not null: Attack '{attackName}' found!");
 										if (attack.Name == "Heal")
 										{
-												P.Heal(Math.Min(P.MaxHealth - P.Health, attack.Damage));
+												P.Heal(Math.Min(S.MaxHealth - P.Health, attack.Damage));
 												MenuManager.ShowMenu("Main");
 										}
 										currentAttack = attack;

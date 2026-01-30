@@ -9,7 +9,7 @@
             {
                 "Choice": "Enter the cave",
                 "Outcome": "You venture into the darkness, your eyes slowly adjusting to the dim light.",
-                "Action": "takedamage10"
+                "Action": "Harm:10"
             },
             {
                 "Choice": "Walk past the cave",
@@ -27,12 +27,12 @@
             {
                 "Choice": "Inspect the cart",
                 "Outcome": "You find some useful supplies scattered around, including a health potion.",
-                "Action": "additemHealthPotion"
+                "Action": "Item:Lesser-Potion-of-Healing:Add:1"
             },
             {
                 "Choice": "Clear the path",
                 "Outcome": "You manage to right the cart and clear the path, but it takes some effort.",
-                "Action": "takedamage5"
+                "Action": "Harm:5"
             }
         ]
         }
@@ -47,7 +47,7 @@
             {
             "Choice": "Fight!",
             "Outcome": "Battle start!",
-            "Action": "battlestart"
+            "Action": "Battle:"
             }
         ],
         "Enemies": [ "Goblin", "Goblin" ],
@@ -74,7 +74,7 @@
             {
             "Choice": "Ambush",
             "Outcome": "You sneak up on the goblin and strike it...",
-            "Action": "battlestartambush"
+            "Action": "Battle:Ambush"
             },
             {
             "Choice": "Leave",

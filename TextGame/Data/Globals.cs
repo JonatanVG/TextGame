@@ -12,21 +12,25 @@ namespace TextGame.Data
   internal static class Globals
   {
     public static Player Player { get; private set; } = null!;
+    public static PlayerStats Stats { get; private set; } = null!;
     public static BattleManager Battle { get; private set;  } = null!;
     public static TurnsController Turns { get; private set; } = null!;
     public static Random Random { get; private set; } = null!;
     public static List<string> EnemyNames {  get; private set; } = null!;
     public static string[,] BattleMap { get; set; } = null!;
+    public static string PrevMenu { get; set; } = null!;
     public static List<Enemy> CanAttack = [];
     public static List<Enemy> ActiveEnemies = [];
 
     [MemberNotNull(
       nameof(Player),
+      nameof(Stats),
       nameof(Battle),
       nameof(Turns),
       nameof(Random),
       nameof(EnemyNames),
-      nameof(BattleMap)
+      nameof(BattleMap),
+      nameof(PrevMenu)
       )]
 
     public static void Initialize(Player player)
@@ -34,12 +38,14 @@ namespace TextGame.Data
       Database.Initialize();
 
       Player = player ?? throw new ArgumentNullException(nameof(player));
+      Stats = new PlayerStats();
 
       Battle = new BattleManager();
       Turns = new TurnsController();
       Random = new Random();
       EnemyNames = [];
       BattleMap = new string[1,1];
+      PrevMenu = "Main Menu";
     }
 
     public static void Reset()

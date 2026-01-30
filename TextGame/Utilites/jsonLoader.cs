@@ -123,7 +123,7 @@ namespace TextGame.Utilites
   )
   {
     public int Duration { get; set; } = Duration;
-    public int CurStack { get; set; } = 0;
+    public int CurStack { get; set; } = 1;
   }
 
   public class EffectData: List<Effect>

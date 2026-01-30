@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TextGame.Data;
 
 namespace TextGame.Utilites.Functions
 {
@@ -10,7 +6,11 @@ namespace TextGame.Utilites.Functions
   {
     public static void HandleAction(string action)
     {
-      if (string.IsNullOrWhiteSpace(action)) return;
+      if (string.IsNullOrWhiteSpace(action)) 
+      {
+        Console.WriteLine("No action to perform.");
+        MenuManager.ShowMenu(Globals.PrevMenu);
+      }
 
       if (!ActionResolver.TryExecute(action)) Console.WriteLine($"[Unknown action] '{action}'");
 
@@ -23,7 +23,7 @@ namespace TextGame.Utilites.Functions
         "GoTo:Settings-Menu",
         "Inventory",
         "Battle:",
-        "Battle:Ambush)" 
+        "Battle:Ambush" 
       };
 
       if (!excluded.Contains(action))

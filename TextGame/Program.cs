@@ -55,7 +55,7 @@ namespace TextGame
       Console.WriteLine();
 
       Console.WriteLine("========= Enchants ========");
-      foreach (Enchant enchant in Globals.Enchants) Console.WriteLine($"Category: {enchant.Type}, Enchant: {enchant.Name}, Effect: {enchant.Effect.Value}");
+      foreach (Enchant enchant in Globals.Enchants) Console.WriteLine($"Category: {enchant.Type}, Enchant: {enchant.Name}, Effect: {enchant.Effect.Type}, {enchant.Effect.Value}");
       Console.WriteLine();
 
       Console.WriteLine("====== General Items =====");

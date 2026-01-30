@@ -8,7 +8,7 @@ namespace TextGame.Utilites
     private static List<Enemy> CanAttack => Globals.CanAttack;
     private static List<Enemy> ActiveEnemies => Globals.ActiveEnemies;
     private static string[,] BattleMap => Globals.BattleMap;
-    private static Player Player => Globals.Player;
+    private static Player P => Globals.Player;
 
     // ============================
     // ===== Hitable Enemies ======
@@ -35,7 +35,7 @@ namespace TextGame.Utilites
       int dy = Math.Abs(a.y - b.y);
 
       int dist = Math.Max(dx, dy);
-      return dist <= Player.Sight;
+      return dist <= P.Sight;
     }
 
     // ============================

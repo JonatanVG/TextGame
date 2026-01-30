@@ -72,7 +72,7 @@
 			"Intrinsic": 405,
 			"Economic": 0,
 			"Quantity": 0,
-			"MaxStack": 0,
+			"MaxStack": 8,
 			"Rarity": "Epic",
 			"Quality": "",
 			"Type": "Consumeable",
@@ -90,7 +90,7 @@
 			"Rarity": "Legendary",
 			"Quality": "",
 			"Type": "Consumeable",
-			"Effect": ["Stat:Up:[All]:30"]
+			"Effect": ["Stat:All:Up:30"]
 		}
 	],
 	"Quest": [
@@ -100,7 +100,7 @@
 			"Intrinsic": 1110,
 			"Economic": 0,
 			"Quantity": 0,
-			"MaxStack": 0,
+			"MaxStack": 1,
 			"Rarity": "Quest",
 			"Quality": "",
 			"Type": "Consumeable",
@@ -114,7 +114,7 @@
 			"Intrinsic": 0,
 			"Economic": 0,
 			"Quantity": 0,
-			"MaxStack": 0,
+			"MaxStack": 1,
 			"Rarity": "Mythos",
 			"Quality": "",
 			"Type": "Consumeable",
