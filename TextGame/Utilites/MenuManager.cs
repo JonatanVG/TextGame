@@ -12,7 +12,15 @@ namespace TextGame.Utilites
       // IMenuLike is used to generalize Menu, Combat Menu and Encounter types allowing for all to be handled uniformly.
 
       menu = Database.GetMenu(menuName);
-      menu ??= Database.GetEncounter(menuName)!;
+      menu ??= Database.GetEncounter(menuName);
+      if (menu is null)
+      {
+        parent ??= Globals.PrevMenu;
+        Console.WriteLine($"MenuName: {menuName}, Parent: {parent}");
+        Console.ReadLine();
+        menu = new Menu(menuName, parent!, "Menu not found.", []);
+      }
+      Globals.PrevMenu = menuName;
       // Game Menu
 
       int optionsCount = menu.Options.Count;
@@ -31,14 +39,13 @@ namespace TextGame.Utilites
       Console.WriteLine();
       Console.Write("Enter option name or number: ");
 
-      var input = Console.ReadLine()?.Trim().ToLower() ?? "";
+      var input = Console.ReadLine()?.Trim() ?? "";
       if (int.TryParse(input, out int inputAsNumber)) input = inputAsNumber.ToString();
 
       if (exits.Contains(input.ToString()))
       {
-        if (menuName == "Settings Menu")
+        if (parent != null)
         {
-          parent ??= "Main Menu";
           ShowMenu(parent);
         }
         else if(menu.Parent == "")
@@ -51,14 +58,21 @@ namespace TextGame.Utilites
       }
       if (input == "0") Environment.Exit(0);
 
-      MenuOption? selectedSearch = menu.Options.FirstOrDefault(x => x.Choice.Equals(input, StringComparison.OrdinalIgnoreCase)) ?? menu.Options.ElementAt(int.Parse(input) - 1) ?? null;
+      MenuOption? selectedSearch = int.TryParse(input, out int index) ? menu.Options.ElementAtOrDefault(index - 1) : Database.GetMenuOption(input);
       if (selectedSearch is null)
       {
-        Console.WriteLine("Invalid option. Please try again.");
+        Console.WriteLine($"Invalid option: '{input}' Please try again.");
+        Console.WriteLine("Press anything to continue...");
+        Console.ReadLine();
+        ShowMenu(menuName, parent);
         return;
       }
 
       Console.WriteLine($"{selectedSearch.Outcome}");
+      if (selectedSearch.Outcome != "") 
+      {
+        Console.ReadLine();
+      }
       ActionHandler.HandleAction(selectedSearch.Action);
     }
   }

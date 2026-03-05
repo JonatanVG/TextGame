@@ -28,7 +28,7 @@
 								{
 										"Choice": "Inventory",
 										"Outcome": "",
-										"Action": "Inventory"
+										"Action": "From:Main-Menu:Inventory"
 								},
 								{
 									 "Choice": "Stats",
@@ -87,9 +87,9 @@
 										"Action": "Explore"
 								},
 								{
-									"Choice": "Inventory",
+										"Choice": "Inventory",
 										"Outcome": "Check your inventory",
-										"Action": "Inventory"
+										"Action": "From:Game-Menu:Inventory"
 								},
 								{
 										"Choice": "Town",
@@ -104,19 +104,19 @@
 						"Description": "A tiny town on a tiny mountain.",
 						"Options": [
 								{
-										"Choice": "Armoury",
+										"Choice": "Town Square",
 										"Outcome": "",
-										"Action": "Store:Armoury"
+										"Action": "GoTo:Town-Square"
 								},
 								{
-										"Choice": "Smithy",
+										"Choice": "Artisans Quarters",
 										"Outcome": "",
-										"Action": "Store:Smithy"
+										"Action": "GoTo:Store-Menus"
 								},
 								{
-										"Choice": "",
+										"Choice": "Industrial District",
 										"Outcome": "",
-										"Action": "Town:Industry"
+										"Action": "GoTo:Industrial-District"
 								}
 						]
 				},
@@ -131,6 +131,174 @@
 						"Parent": "",
 						"Description": "All the items you have crammed into your pockets...",
 						"Options": []
+				}
+		],
+		"LocationMenus": [
+				{
+						"Name": "Town Square",
+						"Parent": "Town Menu",
+						"Description": "Town Square",
+						"Options": [
+								{
+										"Choice": "Market",
+										"Outcome": "You approach the circle of vendors at the center of the plaza.",
+										"Action": "GoTo:Market"
+								},
+								{
+										"Choice": "Tavern",
+										"Outcome": "You enter the local tavern.",
+										"Action": "From:Town-Square:Tavern"
+								},
+								{
+										"Choice": "Town Hall",
+										"Outcome": "Town Hall",
+										"Action": "GoTo:Town-Hall"
+								},
+								{
+										"Choice": "Loud Crowd",
+										"Outcome": "Loud Crowd",
+										"Action": "GoTo:Loud-Crowd"
+								}
+						]
+				},
+				{
+						"Name": "Market",
+						"Parent": "Town Square",
+						"Description": "Market",
+						"Options": [
+								{
+										"Choice": "Vendor 1",
+										"Outcome": "Vendor 1",
+										"Action": "GoTo:Bone-Vendor"
+								},
+								{
+										"Choice": "Vendor 2",
+										"Outcome": "Vendor 2",
+										"Action": "GoTo:Potion-Vendor"
+								},
+								{
+										"Choice": "Vendor 3",
+										"Outcome": "Vendor 3",
+										"Action": "GoTo:Trinket-Vendor"
+								},
+								{
+										"Choice": "Vendor 4",
+										"Outcome": "Vendor 4",
+										"Action": "GoTo:Herb-Vendor"
+								}
+						]
+				},
+				{
+						"Name": "Tavern",
+						"Parent": "Town Square",
+						"Description": "Tavern",
+						"Options": [
+								{
+										"Choice": "Bartender",
+										"Outcome": "Bartender",
+										"Action": "GoTo:Bartender"
+								},
+								{
+										"Choice": "Drunk Patron",
+										"Outcome": "Drunk Patron",
+										"Action": "GoTo:Drunk-Patron"
+								},
+								{
+										"Choice": "Second Floor",
+										"Outcome": "You walk up to the second floor...",
+										"Action": "GoTo:Tavern-Second-Floor"
+								}
+						]
+				},
+				{
+						"Name": "Tavern Second Floor",
+						"Parent": "Tavern",
+						"Description": "Tavern Second Floor",
+						"Options": [
+								{
+										"Choice": "Door 1",
+										"Outcome": "Door 1",
+										"Action": "GoTo:Card-Players"
+								},
+								{
+										"Choice": "Door 2",
+										"Outcome": "Door 2",
+										"Action": "GoTo:Desperate-Group"
+								},
+								{
+										"Choice": "Door 3",
+										"Outcome": "Door 3",
+										"Action": "GoTo:Lone-Patron"
+								},
+								{
+										"Choice": "Staircase",
+										"Outcome": "You walk up to the staircase leading to the third floor...",
+										"Action": "GoTo:Tavern-Third-Floor"
+								}
+						]
+				},
+				{
+					 "Name": "Tavern Third Floor",
+						"Parent": "Tavern Second Floor",
+						"Description": "Tavern Third Floor",
+						"Options": [
+								{
+										"Choice": "Windows",
+										"Outcome": "You look out the windows.",
+										"Action": "GoTo:Windows"
+								},
+								{
+										"Choice": "Blackwood Door",
+										"Outcome": "You approach the large blackwood door.",
+										"Action": "GoTo:Blackwood-Door"
+								}
+						]
+				},
+				{
+						"Name": "Windows",
+						"Parent": "Tavern Third Floor",
+						"Description": "Windows",
+						"Options": [
+								{
+										"Choice": "Look away from the windows",
+										"Outcome": "You look away from the windows. You don't want to see that view anymore.",
+										"Action": "GoTo:Tavern-Third-Floor"
+								}
+						]
+				},
+				{
+						"Name": "Blackwood Door",
+						"Parent": "Tavern Third Floor",
+						"Description": "Blackwood Door",
+						"Options": [
+								{
+										"Choice": "Open the door",
+										"Outcome": "Dark Room",
+										"Action": "GoTo:Dark-Figure"
+								},
+								{
+										"Choice": "Leave the door alone",
+										"Outcome": "You decide to leave the door alone. You don't want to know what's behind it.",
+										"Action": "GoTo:Tavern-Third-Floor"
+								}
+						]
+				},
+				{
+						"Name": "Town Hall",
+						"Parent": "Town Square",
+						"Description": "Town Hall",
+						"Options": [
+								{
+										"Choice": "Receptionist 1",
+										"Outcome": "Receptionist 1",
+										"Action": "GoTo:Receptionist-1"
+								},
+								{
+										"Choice": "Receptionist 2",
+										"Outcome": "Receptionist 2",
+										"Action": "GoTo:Receptionist-2"
+								}
+						]
 				}
 		],
 		"CombatMenus": [

@@ -25,7 +25,16 @@ namespace TextGame
       Console.WriteLine();
 
       Console.WriteLine("========== Menus =========");
-      foreach (var menu in Globals.Menus) Console.WriteLine($"Menu: {menu.Name}");
+      foreach (var menu in Globals.Menus) 
+      {
+        Console.WriteLine($"Menu: {menu.Name}");
+        menu.Description = Database.GetLongDescription(menu.Description) ?? menu.Description;
+        foreach (MenuOption option in menu.Options) option.Outcome = Database.GetLongDescription(option.Outcome) ?? option.Outcome;
+      }
+      Console.WriteLine();
+
+      Console.WriteLine("======= Menu Options =======");
+      foreach (MenuOption option in Globals.MenuOptions) Console.WriteLine($"Option: {option.Choice}, Action: {option.Action}");
       Console.WriteLine();
 
       Console.WriteLine("======= Encounters =======");

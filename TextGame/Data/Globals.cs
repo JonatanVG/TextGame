@@ -65,6 +65,7 @@ namespace TextGame.Data
 
     public static List<EnemyData> Enemies => Database.Enemies;
     public static List<Menu> Menus => Database.Menus;
+    public static List<MenuOption> MenuOptions => Database.MenuOptions;
     public static List<Encounter> Encounters => Database.Encounters;
     public static EffectData Effects => Database.Effects;
     public static List<Attack> Attacks => Database.Attacks;
@@ -72,5 +73,6 @@ namespace TextGame.Data
     public static List<Item> Items => Database.Items;
     public static DamageTypes DTypes => Database.DTypes;
     public static List<Enchant> Enchants => Database.Enchants;
+    public static LongDescriptions LongDescriptions => Database.LongDescriptions;
   }
 }

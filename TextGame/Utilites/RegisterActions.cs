@@ -69,12 +69,23 @@ namespace TextGame.Utilites
         MenuManager.ShowMenu(target);
       });
 
+						// Menu with custom parent
 						ActionResolver.Register(@"^From:(.+):(.+)$", (m) =>
 						{
 								string from = FormatName(m.Groups[1].Value);
 								string to = FormatName(m.Groups[2].Value);
-								MenuManager.ShowMenu(to, from);
-						});
+								if (to == "Inventory")
+								{
+										Menu inventoryMenu = Database.GetMenu("Inventory")!;
+										P.GetInventory().ForEach(i => {
+												if (i.Type == "Consumeable")
+												{
+														inventoryMenu.Options.Add(new MenuOption(i.Name, i.Description, $"Use:{i.Name}"));
+												}
+										});
+								}
+        MenuManager.ShowMenu(to, from);
+      });
 
       // Exploration
       ActionResolver.Register(@"^Explore$", (m) =>
@@ -94,19 +105,6 @@ namespace TextGame.Utilites
       });
 
       /// Inventory
-      // Inventory Menu
-      ActionResolver.Register(@"^Inventory$", (m) =>
-						{
-								Menu Inventory = Database.GetMenu("Inventory")!;
-								P.GetInventory()
-										.ForEach(i =>
-										{
-												if (i.Type == "Consumeable") Inventory.Options.Add(new MenuOption(i.Name, i.Description, $"Use:{i.Name}"));
-          });
-
-								MenuManager.ShowMenu("Inventory");
-						});
-
 						// Use Item
 						ActionResolver.Register(@"^Use:(.+)$", (m) =>
 						{

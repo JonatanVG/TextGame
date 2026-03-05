@@ -11,6 +11,7 @@ namespace TextGame.Data
 
     public static List<EnemyData> Enemies { get; private set; } = [];
     public static List<Menu> Menus { get; private set; } = null!;
+    public static List<MenuOption> MenuOptions { get; private set; } = [];
     public static List<Encounter> Encounters { get; private set; } = [];
     public static EffectData Effects { get; private set; } = null!;
     public static List<Attack> Attacks { get; private set; } = [];
@@ -18,6 +19,7 @@ namespace TextGame.Data
     public static List<Item> Items { get; private set; } = [];
     public static DamageTypes DTypes { get; private set; } = [];
     public static List<Enchant> Enchants { get; private set; } = [];
+    public static LongDescriptions LongDescriptions { get; private set; } = [];
 
     public static void Initialize()
     {
@@ -25,11 +27,15 @@ namespace TextGame.Data
 
       Effects = MenuLoader.LoadEffects();
       DTypes = ItemLoader.LoadDTypes();
+      LongDescriptions = MenuLoader.LoadLongDescriptions();
 
       MenuData menuData = MenuLoader.LoadMenus();
       Menus = [.. menuData
         .Values
         .SelectMany(x => x)];
+
+      MenuOptions = [.. Menus
+        .SelectMany(x => x.Options)];
 
       AttackData attackData = MenuLoader.LoadAttacks();
       Attacks = [.. attackData
@@ -80,6 +86,11 @@ namespace TextGame.Data
       return Menus.FirstOrDefault(x => x.Name == name);
     }
 
+    public static MenuOption? GetMenuOption(string name)
+    {
+      return MenuOptions.FirstOrDefault(x => x.Choice == name);
+    }
+
     public static EnemyData? GetEnemyData(string name)
     {
       return Enemies.FirstOrDefault(x => x.Name == name);
@@ -100,14 +111,19 @@ namespace TextGame.Data
       return Items.FirstOrDefault(x => x.Name == name);
     }
 
-    public static DamageType? GetDamageType(string name) 
+    public static DamageType? GetDamageType(string name)
     {
       return DTypes.FirstOrDefault(x => x.Name == name);
     }
 
-    public static Enchant? GetEnchant(string name) 
+    public static Enchant? GetEnchant(string name)
     {
       return Enchants.FirstOrDefault(x => x.Name == name);
+    }
+
+    public static string? GetLongDescription(string name)
+    {
+      return LongDescriptions.FirstOrDefault(x => x.Name == name)?.Description;
     }
   }
 }

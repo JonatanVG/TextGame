@@ -1,124 +1,124 @@
 {
-	"Common": [
+		"Common": [
 		{
-			"Name": "Apple",
-			"Description": "",
-			"Intrinsic": 0.05,
-			"Economic": 0,
-			"Quantity": 0,
-			"MaxStack": 16,
-			"Rarity": "Common",
-			"Quality": "",
-			"Type": "Consumeable",
-			"Effect": []
+				"Name": "Apple",
+				"Description": "",
+				"Intrinsic": 0.05,
+				"Economic": 0,
+				"Quantity": 0,
+				"MaxStack": 16,
+				"Rarity": "Common",
+				"Quality": "",
+				"Type": "Consumeable",
+				"Effect": []
 		},
 		{
-			"Name": "Bread",
-			"Description": "",
-			"Intrinsic": 1,
-			"Economic": 1,
-			"Quantity": 0,
-			"MaxStack": 16,
-			"Rarity": "Common",
-			"Quality": "",
-			"Type": "Consumeable",
-			"Effect": ["Heal:1"]
+				"Name": "Bread",
+				"Description": "",
+				"Intrinsic": 1,
+				"Economic": 1,
+				"Quantity": 0,
+				"MaxStack": 16,
+				"Rarity": "Common",
+				"Quality": "",
+				"Type": "Consumeable",
+				"Effect": ["Heal:1"]
 		},
 		{
-			"Name": "Coin",
-			"Description": "",
-			"Intrinsic": 1,
-			"Economic": 1,
-			"Quantity": 0,
-			"MaxStack": 20,
-			"Rarity": "Common",
-			"Quality": "",
-			"Type": "Symbol",
-			"Effect": []
+				"Name": "Coin",
+				"Description": "",
+				"Intrinsic": 1,
+				"Economic": 1,
+				"Quantity": 0,
+				"MaxStack": 20,
+				"Rarity": "Common",
+				"Quality": "",
+				"Type": "Symbol",
+				"Effect": []
 		}
-	],
-	"Uncommon": [
+		],
+		"Uncommon": [
 		{
-			"Name": "Lesser Potion of Healing",
-			"Description": "",
-			"Intrinsic": 45,
-			"Economic": 0,
-			"Quantity": 0,
-			"MaxStack": 0,
-			"Rarity": "Uncommon",
-			"Quality": "",
-			"Type": "Consumeable",
-			"Effect": ["Heal:15"]
+				"Name": "Lesser Potion of Healing",
+				"Description": "",
+				"Intrinsic": 45,
+				"Economic": 0,
+				"Quantity": 0,
+				"MaxStack": 0,
+				"Rarity": "Uncommon",
+				"Quality": "",
+				"Type": "Consumeable",
+				"Effect": ["Heal:15"]
 		}
-	],
-	"Rare": [
+		],
+		"Rare": [
 		{
-			"Name": "Potion of Healing",
-			"Description": "",
-			"Intrinsic": 135,
-			"Economic": 0,
-			"Quantity": 0,
-			"MaxStack": 16,
-			"Rarity": "Rare",
-			"Quality": "",
-			"Type": "Consumeable",
-			"Effect": ["Heal:45"]
+				"Name": "Potion of Healing",
+				"Description": "",
+				"Intrinsic": 135,
+				"Economic": 0,
+				"Quantity": 0,
+				"MaxStack": 16,
+				"Rarity": "Rare",
+				"Quality": "",
+				"Type": "Consumeable",
+				"Effect": ["Heal:45"]
 		}
-	],
-	"Epic": [
+		],
+		"Epic": [
 		{
-			"Name": "Greater Potion of Healing",
-			"Description": "",
-			"Intrinsic": 405,
-			"Economic": 0,
-			"Quantity": 0,
-			"MaxStack": 8,
-			"Rarity": "Epic",
-			"Quality": "",
-			"Type": "Consumeable",
-			"Effect": ["Heal:135"]
+				"Name": "Greater Potion of Healing",
+				"Description": "",
+				"Intrinsic": 405,
+				"Economic": 0,
+				"Quantity": 0,
+				"MaxStack": 8,
+				"Rarity": "Epic",
+				"Quality": "",
+				"Type": "Consumeable",
+				"Effect": ["Heal:135"]
 		}
-	],
-	"Legendary": [
+		],
+		"Legendary": [
 		{
-			"Name": "Text Interface",
-			"Description": "",
-			"Intrinsic": 30000,
-			"Economic": 0,
-			"Quantity": 0,
-			"MaxStack": 1,
-			"Rarity": "Legendary",
-			"Quality": "",
-			"Type": "Consumeable",
-			"Effect": ["Stat:All:Up:30"]
+				"Name": "Text Interface",
+				"Description": "",
+				"Intrinsic": 30000,
+				"Economic": 0,
+				"Quantity": 0,
+				"MaxStack": 1,
+				"Rarity": "Legendary",
+				"Quality": "",
+				"Type": "Consumeable",
+				"Effect": ["Stat:All:Up:30"]
 		}
-	],
-	"Quest": [
+		],
+		"Quest": [
 		{
-			"Name": "Strange Gem",
-			"Description": "",
-			"Intrinsic": 1110,
-			"Economic": 0,
-			"Quantity": 0,
-			"MaxStack": 1,
-			"Rarity": "Quest",
-			"Quality": "",
-			"Type": "Consumeable",
-			"Effect": ["Kill:Player"]
+				"Name": "Strange Gem",
+				"Description": "",
+				"Intrinsic": 1110,
+				"Economic": 0,
+				"Quantity": 0,
+				"MaxStack": 1,
+				"Rarity": "Quest",
+				"Quality": "",
+				"Type": "Consumeable",
+				"Effect": ["Kill:Player"]
 		}
-	],
-	"Mythos": [
+		],
+		"Mythos": [
 		{
-			"Name": "",
-			"Description": "",
-			"Intrinsic": 0,
-			"Economic": 0,
-			"Quantity": 0,
-			"MaxStack": 1,
-			"Rarity": "Mythos",
-			"Quality": "",
-			"Type": "Consumeable",
-			"Effect": []
+				"Name": "",
+				"Description": "",
+				"Intrinsic": 0,
+				"Economic": 0,
+				"Quantity": 0,
+				"MaxStack": 1,
+				"Rarity": "Mythos",
+				"Quality": "",
+				"Type": "Consumeable",
+				"Effect": []
 		}
-	]
+		]
 }

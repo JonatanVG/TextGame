@@ -76,20 +76,39 @@ namespace TextGame.Utilites
       var effectsData = JsonSerializer.Deserialize<EffectData>(json)!;
       return effectsData;
     }
+
+    public static LongDescriptions LoadLongDescriptions()
+    {
+      string json = File.ReadAllText("../../../data/LongDescriptions.json");
+      var raw = JsonSerializer.Deserialize<LongDescriptionRaws>(json)!;
+
+      LongDescriptions longDescriptions = [.. raw
+        .Select(x => new LongDescription(
+          x.Name,
+          string.Concat(x.Description)
+        ))];
+      return longDescriptions;
+    }
   }
 
   public sealed record MenuOption(
     string Choice,
     string Outcome,
     string Action
-  );
+  )
+  {
+    public string Outcome { get; set; } = Outcome;
+  };
 
   public sealed record Menu(
     string Name,
     string Parent,
     string Description,
     List<MenuOption> Options
-  ) : IMenuLike;
+  ) : IMenuLike 
+  {
+    public string Description { get; set; } = Description;
+  };
 
   public class MenuData : Dictionary<string, List<Menu>>
   {
@@ -153,7 +172,10 @@ namespace TextGame.Utilites
     List<MenuOption> Options,
     List<string>? Enemies,
     RewardData? Rewards
-  ) : IMenuLike;
+  ) : IMenuLike 
+  {
+    public string Description { get; set; } = Description;
+  };
 
   public sealed record RewardData(
     int Experience,
@@ -245,10 +267,30 @@ namespace TextGame.Utilites
   {
   }
 
+  public sealed record LongDescriptionRaw
+  (
+    string Name,
+    string[] Description
+  );
+
+  public sealed record LongDescription
+  (
+    string Name,
+    string Description
+  );
+
+  public class LongDescriptionRaws : List<LongDescriptionRaw>
+  {
+  }
+
+  public class LongDescriptions : List<LongDescription>
+  {
+  }
+
   public interface IMenuLike
   {
     string Parent { get; }
-    string Description { get; }
+    string Description { get; set; }
     List<MenuOption> Options { get; }
   };
 }

@@ -1,0 +1,186 @@
+﻿[
+  {
+    "Name": "Town Square",
+    "Description": [
+      "The center of a small town. There are merchant booths lined up around\n",
+				  "what seems to be a fountain. The locals don't seem to happy about it..."
+    ]
+  },
+  {
+    "Name": "Town Hall",
+    "Description": [
+      "You enter the town hall. As you enter you immediately understand where\n",
+				  "much of the towns funds go..."
+    ]
+  },
+  {
+    "Name": "Loud Crowd",
+    "Description": [
+      "As you try to look around the plaza your attention is caught by the loud\n",
+				  "crowd shouting down a street. At what you don't know as your view is\n",
+				  "blocked by the masses. But it's clear they're not shouting out of joy..."
+    ]
+  },
+  {
+    "Name": "Market",
+    "Description": [
+      "The market. A circle of vendors selling their wares. The vendors are a mix\n",
+				  "of locals and travelers, all trying to make a living in this harsh world.\n",
+				  "The goods they sell are a mix of useful and useless items, but you might\n",
+				  "find some interesting things here if you look hard enough."
+    ]
+  },
+  {
+    "Name": "Vendor 1",
+    "Description": [
+      "You approach the first vendor. The vendor is a middle aged man.\n",
+				  "He seems to be selling some form of bone ornaments and accessories."
+    ]
+  },
+  {
+    "Name": "Vendor 2",
+    "Description": [
+      "You approach the second vendor. The vendor is a older man.\n",
+				  "He seems to be selling some form of potions and elixirs."
+    ]
+  },
+  {
+    "Name": "Vendor 3",
+    "Description": [
+      "You approach the third vendor. The vendor is a young lady.\n",
+				  "She seems to be selling some form of trinkets and baubles."
+    ]
+  },
+  {
+    "Name": "Vendor 4",
+    "Description": [
+      "You approach the fourth vendor. The vendor is a very old woman.\n",
+				  "She seems to be selling some form of herbs and spices."
+    ]
+  },
+  {
+    "Name": "Tavern",
+    "Description": [
+      "The local tavern. The smell of ale and sweat fills the air.\n",
+				  "The patrons are a mix of locals and travelers, all seeking refuge\n",
+				  "from the harsh world outside. Opposite of the entrance there is a bar.\n",
+				  "A large and gruff looking bartender stands there cleaning a glass.\n",
+				  "On the wall behind him a large and intricately designed sword lays\n",
+				  "on two supporting brackets. The fine craftsmanship along the clear signs\n",
+				  "of wear tell the tale of thousands of battles once fought.\n",
+				  "To your left is a stairway leading up to the second floor."
+    ]
+  },
+  {
+    "Name": "Bartender",
+    "Description": [
+      "You approach the bartender. The bartender is a large and gruff man.\n",
+				  "He seems entranced by the simple act of cleaning a glass,\n",
+				  "yet it's clear his mind is elsewhere."
+    ]
+  },
+  {
+    "Name": "Drunk Patron",
+    "Description": [
+      "You approach a drunk patron sitting at the bar. He looks up at you\n",
+				  "with bleary eyes and slurred speech. He seems to be in a bad mood,\n",
+				  "yet he's very talkative ranting to a small group of patrons."
+    ]
+  },
+  {
+    "Name": "Tavern Second Floor",
+    "Description": [
+      "The second floor of the tavern. The hallway is dimly lit and the air\n",
+				  "is thick with the smell of smoke and alcohol. The doors along\n",
+				  "the walls are closed, but you can hear muffled sounds coming from behind some\n",
+				  "of them. At the end of the hallway a staircase leads up to the third floor."
+    ]
+  },
+  {
+    "Name": "Door 1",
+    "Description": [
+      "You open the first door on your left. Inside you see a group\n",
+				  "of rowdy patrons playing cards. They look up at you with suspicion and hostility."
+    ]
+  },
+  {
+    "Name": "Door 2",
+    "Description": [
+      "You open the second door on your left. Inside you see a small group\n",
+				  "of patrons huddled around a table. They look up at you with fear and desperation."
+    ]
+  },
+  {
+    "Name": "Door 3",
+    "Description": [
+      "You open the first door on your right. Inside you see a lone patron\n",
+      "sitting at a table. He looks up at you with sadness and regret."
+    ]
+  },
+  {
+    "Name": "Tavern Third Floor",
+    "Description": [
+      "The third floor of the tavern. The hallway is even dimmer than\n",
+      "the second floor and the air is thick with the smell of smoke and alcohol.\n",
+      "The right side of the hallway has windows letting light shine in...\n",
+      "Yet you don't remember the sun shining so darkly.\n",
+      "At the end of the hallway a large blackwood door stands.\n",
+      "You don't feel safe here..."
+    ]
+  },
+  {
+    "Name": "Windows",
+    "Description": [
+      "You look out the windows. The view is bleak and desolate.\n",
+				  "The town is surrounded by a barren wasteland.\n",
+				  "The sky is dark and cloudy, with no sign of the sun.\n",
+				  "The only thing you can see in the distance is a large\n",
+				  "swirling storm as black as charcoal...\n",
+				  "And it's getting closer, very slowly..."
+    ]
+  },
+  {
+    "Name": "Blackwood Door",
+    "Description": [
+      "The large blackwood door. The wood is old and weathered,\n",
+				  "yet it still looks sturdy. The iron handle is cold to the touch.\n",
+				  "You don't want to open it, but you can't help but feel drawn to it."
+    ]
+  },
+  {
+    "Name": "Dark Room",
+    "Description": [
+      "You open the door... Inside you see a small room with\n",
+				  "a single chair in the center. The walls are covered\n",
+				  "in strange symbols and the air is thick with the smell of incense.\n",
+				  "You suddenly notice the figure sitting in the chair at the center of the room.\n",
+				  "The figure is shrouded in darkness and even as they seem to be\n",
+				  "watching the slowly approaching storm you can feel their piercing gaze on you.."
+    ]
+  },
+  {
+    "Name": "Town Hall",
+    "Description": [
+      "The town hall. The building is large and imposing, with a grand entrance and a clock tower.\n",
+      "The interior is just as grand, with marble floors and ornate decorations.\n",
+      "Though as large as the building seems to be the reception is suprisingly\n",
+      "empty besides the two receptionists."
+    ]
+  },
+  {
+    "Name": "Receptionist 1",
+    "Description": [
+      "You approach the first receptionist. The receptionist is a middle aged woman\n",
+      "with a stern expression. She seems to be busy with paperwork,\n",
+      "but she looks up at you as you approach."
+    ]
+  },
+  {
+    "Name": "Receptionist 2",
+    "Description": [
+      "You approach the second receptionist. The receptionist is a young man\n",
+      "with a friendly expression. He seems to be busy with paperwork,\n",
+      "but he looks up at you as you approach."
+    ]
+  }
+]
